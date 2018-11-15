@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+
+
+:root {
+    --gracolor: #bdbdbd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, body, span {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f3e5f5;
+}
+
+.header {
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
+    grid-template-columns: max-content 1fr max-content;
+
+    align-items: center;
+
+}
+
+.header__logo {
+    background-color: black;
+    color: #bdbdbd;
+    color: var(--gracolor);
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 21px;
+}
+
+.header__title {
+    font-weight: 600;
+    
+}
+
+.header__title sup{
+    font-size: 0.5em;
+}
+
+
+.header__italic {
+
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    right: -30px;
+    top: 80px;
+
+    font-size: 0.5rem;
+
+    -webkit-transform: rotate(-90deg);
+
+            transform: rotate(-90deg);
+}
+
+.grid__wrapper {
+    max-width: 1200px;
+    
+    width: 100%;
+    height: 57vw;
+    
+    margin: 0 auto;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid__left {
+    position: relative;
+}
+
+.text__items {
+    width: 310px;
+    position: absolute;
+
+    top: 35%;
+    left: 20%;
+
+    z-index: 9;
+}
+
+.text__items .text__subtitle,
+.text__items .text__sentence {
+    color: #bdbdbd;
+    color: var(--gracolor);
+}
+
+
+.text__items span {
+    display: block;
+    font-size: 0.5rem;
+}
+
+.text__items .text__subtitle {
+    text-transform: uppercase;
+}
+
+.text__items h1 {
+    
+    font-size: 90px;
+}
+
+.text__link {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    padding-top: 89px;
+}
+
+.tour__gallery {
+    position: relative;
+}
+
+.grid__right img{
+
+    width: 100%;
+    height: 57vw;
+
+    
+}
+
+.gallery__changer {
+    background-color: white;
+    padding: 10px 20px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
